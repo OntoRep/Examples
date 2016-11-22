@@ -1,3 +1,28 @@
+#Core languages and types 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . #Resource data framework
+@prefix owl: <http://www.w3.org/2002/07/owl#> .              #Owl ontology language
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .      #RDF schema 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .           #XML standard datatypes
+
+#Standard linked data terms
+@prefix skos: <http://www.w3.org/2008/05/skos#>.   #Simple Knowledge Organization System 
+@prefix cc: <http://creativecommons.org/ns#>. #Creative commons namespace
+@prefix dc: <http://purl.org/dc/terms/> .     #Dublin Core Metadata Initiative terms
+
+#Linked data documentation
+@prefix vann: <http://purl.org/vocab/vann/> .  #A vocabulary for annotating vocabulary descriptions
+@prefix voaf: <http://purl.org/vocommons/voaf#> . #A vocabulary of a friend, for describing relations between linked vocabularies
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> . #Semantic web vocabulary status ontology
+@prefix void: <https://www.w3.org/TR/void/>. #Vocabulary of interelinked datasets 
+
+#Seas specific namespaces (Target is to have just one)
+@prefix seas: <http://purl.org/NET/seas#>.
+@prefix ts: <http://purl.org/NET/seas/timeseries#>.
+
+@prefix vc: <http://purl.org/NET/seas/vcard#>.
+
+@prefix : <http://example.org/seas#>.
+
 :FlexiblePrice a seas:Contract;
    seas:partner 
             [a seas:Consumer; vc:Name "Consumer Name"], 
