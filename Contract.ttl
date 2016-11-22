@@ -31,13 +31,14 @@
    seas:site :Site123435;
    seas:product :FlexibilityProduct;
    seas:hasEvaluaton [a seas:Price;
-       ts:category ts:Forecast;
-       ts:temporalContext [ts:duration "P1M"^^xsd:Duration];
-	   seas:quantity CurencyPerKwh;
-       ts:unit seas:Euro;
-       ts:value 3.80];	  
+       seas:category ts:Forecast;
+       seas:temporalContext [ts:duration "P1M"^^xsd:Duration];
+	   seas:quantity seas:CurrencyPerKwh;
+       seas:unit seas:Euro;
+       seas:value 3.80];	  
    seas:hasEvaluaton [a seas:Incentive;
-       ts:category ts:Forecast;
-       ts:temporalContext [ts:duration "P1M"^^xsd:Duration];
-       ts:unit seas:Euro;
-       ts:value 0.10].   
+       seas:category seas:Forecast;
+       seas:temporalContext [seas:duration "P1M"^^xsd:Duration];
+       seas:quantity seas:CurrencyPerKwh;
+       seas:unit seas:Euro;
+       seas:value 0.10].   
